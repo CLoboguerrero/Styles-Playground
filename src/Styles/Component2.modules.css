@@ -1,0 +1,27 @@
+.intro-container-right {
+    width: 450px;
+    height: 450px;
+}
+
+.module-border-wrap {
+    width: 450px;
+    height: 450px;
+    padding: 1rem;
+    background: linear-gradient(140deg, rgba(22,19,74) 22%, rgba(0,194,165,1) 100%);
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0c0b0b;
+    color: white;
+    width: 425px;
+    height: 425px;
+    border-radius: 50%;
+  }
