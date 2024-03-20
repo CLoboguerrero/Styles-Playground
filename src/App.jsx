@@ -8,8 +8,8 @@ function App() {
     <>
     <Component2/>
     <Component1/>
-    <Component3/>
     <Component4/>
+    <Component3/>
     </>
   )
 }
