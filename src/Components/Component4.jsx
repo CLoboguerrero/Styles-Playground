@@ -4,12 +4,8 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-//import { ScrollSmoother } from 'gsap/ScrollSmoother';
-//import { ScrollSmoother } from 'gsap/all';
-import { ScrollSmoother } from 'gsap-trial/ScrollSmoother';
 
-gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
-//gsap.registerPlugin(ScrollSmoother);
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 const Component4 = () => {
 
