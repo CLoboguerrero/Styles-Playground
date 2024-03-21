@@ -2,12 +2,9 @@ import '../App.css'
 import { useState } from 'react';
 import reactLogo from '../assets/react.svg';
 import viteLogo from '/vite.svg';
-import LocomotiveScroll from 'locomotive-scroll';
 
 const Component1 = () => {
     const [count, setCount] = useState(0)
-
-    const scroll = new LocomotiveScroll();
 
     return (
       <div className='component-1' data-scroll>
