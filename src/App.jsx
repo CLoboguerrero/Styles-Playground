@@ -3,7 +3,8 @@ import Component1 from "./Components/Component1";
 import Component2 from "./Components/Component2";
 import Component3 from "./Components/Component3";
 import Component4 from "./Components/Component4";
-import { ReactLenis } from '@studio-freight/react-lenis'
+import Component5 from "./Components/Component5";
+import { ReactLenis } from '@studio-freight/react-lenis';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Component2/>
       <Component1/>
       <Component4/>
+      <Component5/>
       <Component3/>
     </ReactLenis>
   )
