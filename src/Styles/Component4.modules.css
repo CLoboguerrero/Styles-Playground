@@ -42,13 +42,33 @@
     margin-bottom: 60px;
   }
 
-  .cuadrito {
+  .cuadrito, .cuadrito2, .cuadrito3, .cuadrito4 {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 150px;
     height: 150px;
+    border-radius: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .cuadrito {
     background-color: aquamarine;
     color: blue;
-    border-radius: 25px;
+  }
+
+  .cuadrito2 {
+    background-color: lightcoral;
+    color: blue;
+  }
+
+  .cuadrito3 {
+    background-color: orange;
+    color: black;
+  }
+
+  .cuadrito4 {
+    background-color: lightslategray;
+    color: black;
   }
