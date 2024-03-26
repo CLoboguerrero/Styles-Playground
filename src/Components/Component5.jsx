@@ -44,8 +44,75 @@ const Component5 = () => {
       });
     });
 
+  //OJO uso de scrub ABAJO!!
+    useGSAP(() => {
+      gsap.to('.cuadrito2', {
+        scrollTrigger: {
+          trigger: '.cuadrito2',
+          start: 'top center',
+          end: 'top 100px',
+          scrub: true, //se puede usar true o un valor numérico en segundos
+        },
+        x: 500,
+        rotation: 360,
+        duration: 3
+      });
+    });
 
+  //OJO uso de timeline ABAJO!!
+    useGSAP(() => {
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.cuadrito3',
+          start: 'top center',
+          end: 'top 100px',
+          scrub: true,
+        }
+      })
+      
+      tl.to('.cuadrito3', {
+        x: 500,
+        rotation: 360,
+        duration: 3
+      })
+      .to('.cuadrito3', {
+        backgroundColor: 'purple',
+        duration: 1
+      })
+      .to('.cuadrito3', {
+        x: 0,
+        duration: 3
+      })
+    });
 
+  //OJO uso de Pinning ABAJO!!
+
+  useGSAP(() => {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.cuadrito4',
+        start: 'top center',
+        end: '+=4000',
+        scrub: true,
+        pin: true,
+        //anticipatePin: 1 //Investigar para qué es esto!
+      }
+    })
+    
+    tl.to('.cuadrito4', {
+      x: 500,
+      rotation: 360,
+      duration: 3
+    })
+    .to('.cuadrito4', {
+      backgroundColor: 'red',
+      duration: 1
+    })
+    .to('.cuadrito4', {
+      x: 0,
+      duration: 3
+    })
+  });
 
     //Otra manera de poder crear una animación es con eventListener, aunque esto NO es buena práctica de uso en React (Recordar que al estar definitido el tipo de event, no es necesario definir un onClick en el elemento HTML correspondiente)
 
@@ -68,7 +135,10 @@ const Component5 = () => {
     <>
       <div className='box' ref={clickBox}>
         <img src={logo} alt='logo' className='component5-logo' onClick={clickToEnlarge} ref={atomImg}/>
-        <div id='cuadrito' className='cuadrito'>Cuadrito</div>
+        <div className='cuadrito'>Cuadrito 1</div>
+        <div className='cuadrito2'>Cuadrito 2</div>
+        <div className='cuadrito3'>Cuadrito 3</div>
+        <div className='cuadrito4'>Cuadrito 4</div>
       </div>
 
     </>
