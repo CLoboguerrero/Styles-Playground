@@ -7,7 +7,7 @@ import Component5 from "./Components/Component5";
 import { ReactLenis } from '@studio-freight/react-lenis';
 
 function App() {
-//Adding a text here just to test the repo on mac
+
   return (
     <ReactLenis root>
       <Component2/>
